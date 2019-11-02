@@ -1,4 +1,4 @@
-package id.havanah.app.poetrify.fragment;
+package id.havanah.app.poetrify.page.profile;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -12,15 +12,15 @@ import androidx.fragment.app.Fragment;
 import id.havanah.app.poetrify.R;
 
 /**
- * Created by farhan at 21:44
- * on 25/10/2019.
+ * Created by farhan at 18:36
+ * on 30/10/2019.
  * Havanah Team, ID.
  */
-public class ProfileFragment extends Fragment {
+public class ArchivePage extends Fragment {
   @Nullable
   @Override
   public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-    View view = inflater.inflate(R.layout.fragment_profile, container, false);
+    View view = inflater.inflate(R.layout.page_archive, container, false);
     return view;
   }
 }

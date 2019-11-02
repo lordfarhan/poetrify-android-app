@@ -5,11 +5,11 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
-import id.havanah.app.poetrify.fragment.ActivityFragment;
-import id.havanah.app.poetrify.fragment.CreateFragment;
-import id.havanah.app.poetrify.fragment.HomeFragment;
-import id.havanah.app.poetrify.fragment.ProfileFragment;
-import id.havanah.app.poetrify.fragment.SearchFragment;
+import id.havanah.app.poetrify.page.landing.ActivityPage;
+import id.havanah.app.poetrify.page.landing.CreatePage;
+import id.havanah.app.poetrify.page.landing.ExplorePage;
+import id.havanah.app.poetrify.page.landing.HomePage;
+import id.havanah.app.poetrify.page.landing.ProfilePage;
 
 /**
  * Created by farhan at 21:39
@@ -30,15 +30,15 @@ public class LandingAdapter extends FragmentPagerAdapter {
   public Fragment getItem(int position) {
     switch (position) {
       case 0:
-        return new HomeFragment();
+        return new HomePage();
       case 1:
-        return new SearchFragment();
+        return new ExplorePage();
       case 2:
-        return new CreateFragment();
+        return new CreatePage();
       case 3:
-        return new ActivityFragment();
+        return new ActivityPage();
       case 4:
-        return new ProfileFragment();
+        return new ProfilePage();
     }
     return null;
   }

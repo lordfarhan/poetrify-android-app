@@ -5,4 +5,15 @@
     <string name="profile">Profile</string>
     <string name="create">Create</string>
     <string name="search">Search</string>
+    <string name="like">Likes</string>
+    <string name="short_lorem_ipsum">Lorem ipsum dolor sit amet</string>
+    <string name="search_hint">Type to seach</string>
+    <string name="trending">Trending</string>
+    <string name="watch">Watch All</string>
+    <string name="username">Username</string>
+    <string name="explore">Explore</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="sample_about">Stars can\'t shine without darkness.</string>
+    <string name="sample_name">Farhan Muhammad</string>
+    <string name="sample_timestamp">12 Mei 2000</string>
 </resources>

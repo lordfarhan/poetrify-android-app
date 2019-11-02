@@ -1,6 +1,5 @@
 package id.havanah.app.poetrify;
 
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 
 import androidx.annotation.Nullable;
@@ -22,6 +21,7 @@ import me.majiajie.pagerbottomtabstrip.listener.OnTabItemSelectedListener;
  */
 public class Landing extends AppCompatActivity {
   private PageNavigationView pageNavigationView;
+  private NavigationController navigationController;
 
   @Override
   protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -44,9 +44,9 @@ public class Landing extends AppCompatActivity {
 //        .build();
 
     pageNavigationView = findViewById(R.id.pageNavigationView_landing);
-    final NavigationController navigationController = pageNavigationView.custom()
+    navigationController = pageNavigationView.custom()
         .addItem(newItem(R.drawable.ic_home_gray_24dp, R.drawable.ic_home_primary_24dp))
-        .addItem(newItem(R.drawable.ic_search_gray_24dp, R.drawable.ic_search_primary_24dp))
+        .addItem(newItem(R.drawable.ic_language_gray_24dp, R.drawable.ic_language_primary_24dp))
         .addItem(newItem(R.drawable.ic_create_gray_24dp, R.drawable.ic_create_primary_24dp))
         .addItem(newItem(R.drawable.ic_timeline_gray_24dp, R.drawable.ic_timeline_primary_24dp))
         .addItem(newItem(R.drawable.ic_person_gray_24dp, R.drawable.ic_person_primary_24dp))
@@ -80,7 +80,6 @@ public class Landing extends AppCompatActivity {
         navigationController.setHasMessage(index, false);
         navigationController.setMessageNumber(index, 0);
       }
-
       @Override
       public void onRepeat(int index) {
       }
